@@ -28,14 +28,14 @@ with open('README.rst', 'r', encoding='utf-8') as f:
     README = f.read()
 
 setup(
-    name='azure-cli-example',
+    name='azure-cli-{{cookiecutter.package_name}}',
     version='0.0.1',
     description='Microsoft Azure Command-Line Tools Example Command Module',
     long_description=README,
     license='MIT',
     author='Example Author',
-    author_email='author@example.com',
-    url='https://github.com/example/repo',
+    author_email='author@{{cookiecutter.package_name}}.com',
+    url='https://github.com/{{cookiecutter.package_name}}/repo',
     classifiers=CLASSIFIERS,
     namespace_packages = [
         'azure',
@@ -43,7 +43,7 @@ setup(
         'azure.cli.command_modules',
     ],
     packages=[
-        'azure.cli.command_modules.example',
+        'azure.cli.command_modules.{{cookiecutter.package_name}}',
     ],
     install_requires=DEPENDENCIES,
 )
