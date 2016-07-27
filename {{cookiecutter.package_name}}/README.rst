@@ -1,3 +1,3 @@
-Microsoft Azure CLI 'example' Command Module
+Microsoft Azure CLI '{{cookiecutter.package_name}}' Command Module
 ==================================
 
