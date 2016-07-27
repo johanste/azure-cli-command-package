@@ -13,4 +13,4 @@ def example(my_required_arg, my_optional_arg='MyDefault'):
     result = {'a': my_required_arg, 'b': my_optional_arg}
     return result
 
-cli_command('example', example)
+cli_command('{{cookiecutter.package_name}}', example)
