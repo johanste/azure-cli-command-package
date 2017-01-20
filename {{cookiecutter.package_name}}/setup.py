@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-#---------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------
 # Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License. See License.txt in the project root for license information.
-#---------------------------------------------------------------------------------------------
+# Licensed under the {{cookiecutter.license}} License. See License.txt in the project root for license information.
+# --------------------------------------------------------------------------------------------
 
 from codecs import open
 from setuptools import setup
@@ -10,7 +10,7 @@ from setuptools import setup
 # The full list of classifiers is available at
 # https://pypi.python.org/pypi?%3Aaction=list_classifiers
 CLASSIFIERS = [
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
     'Intended Audience :: System Administrators',
     'Programming Language :: Python',
@@ -30,12 +30,12 @@ with open('README.rst', 'r', encoding='utf-8') as f:
 setup(
     name='azure-cli-{{cookiecutter.package_name}}',
     version='0.0.1',
-    description='Microsoft Azure Command-Line Tools Example Command Module',
+    description='Microsoft Azure Command-Line Tools {{cookiecutter.package_name}} Command Module',
     long_description=README,
-    license='MIT',
-    author='Example Author',
-    author_email='author@{{cookiecutter.package_name}}.com',
-    url='https://github.com/{{cookiecutter.package_name}}/repo',
+    license='{{cookiecutter.license}}',
+    author='{{cookiecutter.author}}fs',
+    author_email='{{cookiecutter.author_email}}',
+    url='https://github.com/example/repo',
     classifiers=CLASSIFIERS,
     namespace_packages = [
         'azure',
